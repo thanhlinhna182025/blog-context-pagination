@@ -1,0 +1,120 @@
+.top {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  background-color: #69d2e7;
+  margin-left: -10px;
+}
+.mobileBar {
+  display: none;
+}
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #ccc;
+  border-radius: 10px;
+  padding: 3px;
+  gap: 0 3px;
+}
+.toggle > * {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: var(--orange);
+}
+.toggleButton {
+  background-color: var(--orange);
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+}
+
+.topSearchIcon {
+  color: #666;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.topCenter {
+  flex: 6;
+}
+.topList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.topList > li > a:hover {
+  color: var(--orange);
+}
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+}
+.mobileBar {
+  display: none;
+}
+.mobileBarIcon {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .topCenter,
+  .topRight {
+    display: none;
+  }
+  .top {
+    gap: 0 150px;
+    margin-bottom: 10px;
+  }
+  .mobileBar {
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 30px 10px;
+    z-index: 999;
+  }
+  .mobileItem > .topList {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mobileBarIcon {
+    cursor: pointer;
+    font-size: 24px;
+    flex: 1;
+    display: block;
+  }
+}

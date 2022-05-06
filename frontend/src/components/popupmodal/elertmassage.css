@@ -1,0 +1,30 @@
+.elert {
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  right: 30px;
+  opacity: 0.5;
+  animation: hidenIn 1s linear forwards;
+}
+.e-wrapper {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.e-wrapper > i {
+  font-size: 30px;
+}
+@keyframes hidenIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

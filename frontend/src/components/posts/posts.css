@@ -1,0 +1,75 @@
+.posts {
+  flex: 9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  overflow: hidden;
+  box-shadow: var(--boxShadow);
+}
+
+.paginateposts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.paginateposts > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+}
+.paginateposts > ul > li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.paginateposts > ul > li:hover {
+  background-color: #ccc;
+}
+.paginateposts > ul > li:selected {
+  background-color: blue;
+}
+.paginateposts > ul > li:first-child {
+  width: 60px;
+}
+.paginateposts > ul > li:last-child {
+  width: 60px;
+}
+.selected {
+  background-color: teal;
+}
+
+@media screen and (max-width: 480px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+  .paginateposts > ul {
+    margin-bottom: -135px;
+    gap: 0 5px;
+  }
+  .paginateposts > ul > li {
+    width: 25px;
+    height: 25px;
+    color: var(--black);
+  }
+  .paginateposts > ul > li:first-child {
+    width: 30px;
+  }
+  .paginateposts > ul > li:last-child {
+    width: 30px;
+  }
+}

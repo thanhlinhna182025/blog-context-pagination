@@ -1,0 +1,78 @@
+.changeImage {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.postUpdate {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.postUpdateWrapper {
+  width: 80vw;
+}
+.ImageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+.ImageContainer > img {
+  width: 100%;
+  object-fit: cover;
+}
+.updateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  width: 70vw;
+}
+.updateFormGruop {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.updateInput {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-bottom: 1px solid gray;
+  flex: 1;
+}
+.updateButton {
+  width: 120px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: teal;
+}
+
+@media screen and (max-width: 480px) {
+  .ImageContainer {
+    width: 100%;
+  }
+  .postUpdate {
+    margin-top: 60px;
+  }
+  .postUpdateWrapper {
+    width: 100%;
+  }
+  .updateForm {
+    width: 100%;
+    gap: 10px 0;
+  }
+  .updateFormGruop > label {
+    display: none;
+  }
+  .updateFormGruop:nth-child(2) {
+    font-size: 20px;
+  }
+}

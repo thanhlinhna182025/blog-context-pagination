@@ -1,0 +1,9 @@
+.category {
+  display: flex;
+  margin-top: 60px;
+}
+@media screen and (max-width: 480px) {
+  .category {
+    flex-direction: column-reverse;
+  }
+}

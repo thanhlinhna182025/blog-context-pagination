@@ -1,0 +1,44 @@
+.singlePost {
+  flex: 9;
+  padding: 50px;
+  margin-top: 50px;
+}
+.postView {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  width: 100%;
+}
+.postView > img {
+  width: 100%;
+  object-fit: cover;
+}
+.postViewTitle {
+  font-size: 20px;
+}
+.postView-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titlePostContainer {
+  display: flex;
+  gap: 5px;
+}
+.postSettingIcon {
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.postSettingIcon:first-child {
+  color: teal;
+}
+.postSettingIcon:last-child {
+  color: tomato;
+}
+@media screen and (max-width: 480px) {
+  .singlePost {
+    padding: 0;
+    margin: 0;
+  }
+}
