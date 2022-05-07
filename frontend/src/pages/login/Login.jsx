@@ -8,7 +8,7 @@ import * as Yup from "yup";
 import { useContext, useState } from "react";
 
 const Login = () => {
-  const { dispatch, isFetching, user, error } = useContext(Context);
+  const { dispatch, isFetching, error } = useContext(Context);
   const [elertMessage, setElertMessage] = useState("");
   const history = useHistory();
 
