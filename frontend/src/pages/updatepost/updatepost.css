@@ -53,6 +53,10 @@
   border: none;
   border-radius: 5px;
   background: teal;
+  cursor: pointer;
+}
+.updateButton:hover {
+  background-color: #ccc;
 }
 
 @media screen and (max-width: 480px) {

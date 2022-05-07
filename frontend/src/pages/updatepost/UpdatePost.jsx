@@ -28,6 +28,7 @@ const UpdatePost = () => {
       }
     };
     getPost();
+    return null;
   }, [postId]);
   const handleSubmit = async (event) => {
     event.preventDefault();
